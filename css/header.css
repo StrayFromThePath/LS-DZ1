@@ -1,0 +1,157 @@
+/* --------- Fonts --------- */
+@font-face {
+  font-family: 'fira_sanslight';
+  src: url('/fonts/Fira/firasans-light.eot');
+  src: url('/fonts/Fira/firasans-light.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-light.woff') format('woff'), url('/fonts/Fira/firasans-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sanslight_italic';
+  src: url('/fonts/Fira/firasans-lightitalic.eot');
+  src: url('/fonts/Fira/firasans-lightitalic.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-lightitalic.woff') format('woff'), url('/fonts/Fira/firasans-lightitalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sansbook';
+  src: url('/fonts/Fira/firasans-book.eot');
+  src: url('/fonts/Fira/firasans-book.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-book.woff') format('woff'), url('/fonts/Fira/firasans-book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sansmedium';
+  src: url('/fonts/Fira/firasans-medium.eot');
+  src: url('/fonts/Fira/firasans-medium.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-medium.woff') format('woff'), url('/fonts/Fira/firasans-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proximanovacond-semibold-webfont';
+  src: url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.eot');
+  src: url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.woff') format('woff'), url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.f-book {
+  font-family: "fira_sansbook";
+}
+.f-medium {
+  font-family: "fira_sansmedium";
+}
+.f-light {
+  font-family: 'fira_sanslight';
+}
+.f-li {
+  font-family: 'fira_sanslight_italic';
+}
+.pnc-semib {
+  font-family: "proximanovacond-semibold-webfont";
+}
+/* --------- Mixins --------- */
+/* MIXINS */
+.inlineblock {
+  display: inline !ie;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+}
+.clearfix {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*--------Header--------*/
+.header {
+  position: relative;
+  height: 119px;
+  margin-bottom: 40px;
+  background-color: #eff3f7;
+}
+.header__line {
+  background-image: -moz-linear-gradient(0deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #87aeba 28%, #1c667a 48%, #87aeba 71%, #f2f6fa 100%);
+  background-image: -webkit-linear-gradient(0deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #87aeba 28%, #1c667a 48%, #87aeba 71%, #f2f6fa 100%);
+  background-image: -ms-linear-gradient(0deg, #1c667a 0%, #f6fafe 0%, #d8d8d8 0%, #f2f6fa 0%, #87aeba 28%, #1c667a 48%, #87aeba 71%, #f2f6fa 100%);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 116px;
+  height: 3px;
+}
+.header__logo {
+  position: absolute;
+  top: 29px;
+  left: -120px;
+}
+.social__list {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+  position: absolute;
+  top: 35px;
+  right: -141px;
+  width: 280px;
+  margin-bottom: 20px;
+}
+.social__list:before,
+.social__list:after {
+  content: "";
+  display: table;
+}
+.social__list:after {
+  clear: both;
+}
+.social__item {
+  float: left;
+  margin-right: 24px;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+.social__link {
+  display: block;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.social__link-vk {
+  width: 46px;
+  height: 46px;
+  background: url("/img/sprites_ico.png") no-repeat 0 0;
+}
+.social__link-vk:hover {
+  background: url("/img/sprites_ico.png") no-repeat 0 -46px;
+}
+.social__link-tw {
+  width: 47px;
+  height: 47px;
+  background: url("/img/sprites_ico.png") no-repeat -47px 0;
+}
+.social__link-tw:hover {
+  background: url("/img/sprites_ico.png") no-repeat -47px -47px;
+}
+.social__link-fc {
+  width: 47px;
+  height: 47px;
+  background: url("/img/sprites_ico.png") no-repeat -95px 0;
+}
+.social__link-fc:hover {
+  background: url("/img/sprites_ico.png") no-repeat -95px -47px;
+}
+.social__link-git {
+  width: 47px;
+  height: 47px;
+  background: url("/img/sprites_ico.png") no-repeat -143px 0;
+}
+.social__link-git:hover {
+  background: url("/img/sprites_ico.png") no-repeat -143px -47px;
+}

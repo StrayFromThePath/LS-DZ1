@@ -1,0 +1,275 @@
+/* --------- Fonts --------- */
+@font-face {
+  font-family: 'fira_sanslight';
+  src: url('/fonts/Fira/firasans-light.eot');
+  src: url('/fonts/Fira/firasans-light.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-light.woff') format('woff'), url('/fonts/Fira/firasans-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sanslight_italic';
+  src: url('/fonts/Fira/firasans-lightitalic.eot');
+  src: url('/fonts/Fira/firasans-lightitalic.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-lightitalic.woff') format('woff'), url('/fonts/Fira/firasans-lightitalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sansbook';
+  src: url('/fonts/Fira/firasans-book.eot');
+  src: url('/fonts/Fira/firasans-book.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-book.woff') format('woff'), url('/fonts/Fira/firasans-book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sansmedium';
+  src: url('/fonts/Fira/firasans-medium.eot');
+  src: url('/fonts/Fira/firasans-medium.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-medium.woff') format('woff'), url('/fonts/Fira/firasans-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proximanovacond-semibold-webfont';
+  src: url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.eot');
+  src: url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.woff') format('woff'), url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.f-book {
+  font-family: "fira_sansbook";
+}
+.f-medium {
+  font-family: "fira_sansmedium";
+}
+.f-light {
+  font-family: 'fira_sanslight';
+}
+.f-li {
+  font-family: 'fira_sanslight_italic';
+}
+.pnc-semib {
+  font-family: "proximanovacond-semibold-webfont";
+}
+/* --------- Mixins --------- */
+/* MIXINS */
+.inlineblock {
+  display: inline !ie;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+}
+.clearfix {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.contact {
+  width: 650px;
+  float: right;
+  margin-bottom: 26px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.contact__title {
+  height: 121px;
+  margin-bottom: 15px;
+  background-color: #48cbe8;
+  font-family: "fira_sansbook";
+  font-size: 27px;
+  color: #fff;
+  text-align: center;
+  line-height: 125px;
+  -webkit-box-shadow: 0 15px 0 0 #67dffa;
+  -moz-box-shadow: 0 15px 0 0 #67dffa;
+  box-shadow: 0 15px 0 0 #67dffa;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.contact__wrap {
+  min-height: 700px;
+  background-color: #eff3f7;
+}
+.form__wrap {
+  width: 402px;
+  margin: auto;
+  padding-top: 47px;
+}
+.form__wrap label {
+  font-family: 'fira_sanslight';
+  font-size: 19px;
+  color: #959aa8;
+}
+.form__inputs-row {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+  margin-bottom: 15px;
+}
+.form__inputs-row:before,
+.form__inputs-row:after {
+  content: "";
+  display: table;
+}
+.form__inputs-row:after {
+  clear: both;
+}
+.form__input-row {
+  display: inline !ie;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+}
+.form__input {
+  width: 190px;
+  height: 39px;
+  padding: 10px;
+  border: 1px solid #48cbe8;
+  border-radius: 3px;
+  background-color: #fbfcfd;
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+}
+.form__input::-webkit-input-placeholder {
+  color: #48cbe8;
+}
+.form__input:-moz-placeholder {
+  color: #48cbe8;
+}
+.form__input::-moz-placeholder {
+  color: #48cbe8;
+}
+.form__input:-ms-input-placeholder {
+  color: #48cbe8;
+}
+.form__input-name {
+  margin-right: 18px;
+}
+textarea {
+  width: 402px;
+  height: 181px;
+  padding: 10px;
+  margin-bottom: 13px;
+  border: 1px solid #48cbe8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #fbfcfd;
+  resize: none;
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+}
+textarea::-webkit-input-placeholder {
+  color: #48cbe8;
+}
+textarea:-moz-placeholder {
+  color: #48cbe8;
+}
+textarea::-moz-placeholder {
+  color: #48cbe8;
+}
+textarea:-ms-input-placeholder {
+  color: #48cbe8;
+}
+.form__captcha-pic {
+  display: inline !ie;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  width: 189px;
+  height: 77px;
+  border: 1px solid #48cbe8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #fbfcfd;
+}
+.form__captcha-row {
+  margin-bottom: 34px;
+}
+.form__input-captcha {
+  width: 190px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 18px;
+  border: 1px solid #48cbe8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #fbfcfd;
+}
+.form__input-submit {
+  float: left;
+  width: 139px;
+  height: 31px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: none;
+  background-color: #48cbe8;
+  outline: none;
+  -webkit-box-shadow: 0 3px 0 0 #3ba8c0;
+  -moz-box-shadow: 0 3px 0 0 #3ba8c0;
+  box-shadow: 0 3px 0 0 #3ba8c0;
+  font-family: "fira_sansbook";
+  font-size: 19px;
+  color: #fff;
+}
+.form__input-submit:hover {
+  box-shadow: none;
+  height: 34px;
+}
+.form__input-submit:active {
+  -webkit-box-shadow: 0 -3px 0 0 #3ba8c0;
+  -moz-box-shadow: 0 -3px 0 0 #3ba8c0;
+  box-shadow: 0 -3px 0 0 #3ba8c0;
+}
+.form__input-reset {
+  float: right;
+  width: 139px;
+  height: 31px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: none;
+  background-color: #849db5;
+  outline: none;
+  -webkit-box-shadow: 0 3px 0 0 #687b8f;
+  -moz-box-shadow: 0 3px 0 0 #687b8f;
+  box-shadow: 0 3px 0 0 #687b8f;
+  font-family: "fira_sansbook";
+  font-size: 19px;
+  color: #fff;
+}
+.form__input-reset:hover {
+  box-shadow: none;
+  height: 34px;
+}
+.form__input-reset:active {
+  -webkit-box-shadow: 0 -3px 0 0 #687b8f;
+  -moz-box-shadow: 0 -3px 0 0 #687b8f;
+  box-shadow: 0 -3px 0 0 #687b8f;
+}

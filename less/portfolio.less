@@ -1,0 +1,129 @@
+/* --------- Fonts --------- */
+
+@import "fonts";
+
+/* --------- Mixins --------- */
+
+@import "mixins";
+
+.portfolio {
+    width: 650px;
+    float: right;
+    margin-bottom: 39px;
+    background-color: #eff3f7;
+    .border-radius(3px);
+}
+
+.portfolio__title {
+    width: 202px;
+    height: 67px;
+    padding-left: 25px;
+    margin-bottom: 35px;
+    border-bottom: 2px solid #3ba8c0;
+    .f-book;
+    font-size: 27px;
+    color: #3ba8c0;
+    line-height: 67px;
+}
+
+.portfolio__list {
+    .clearfix;
+    min-height: 737px;
+    padding: 0 20px;
+    margin-left: -29px;
+}
+
+.portfolio__item {
+    width: 185px;
+    float: left;
+    margin-left: 28px;
+    margin-bottom: 33px;
+}
+
+.portfolio__pic {
+    position: relative;
+    display: block;
+    height: 131px;
+    margin-bottom: 5px;
+    .border-radius(5px);
+    border: 2px solid #3ba8c0;
+
+    img {
+        max-width: 181px;
+        max-height: 127px;
+        .border-radius(5px);
+    }
+
+    p {
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        border: 2px solid #eff3f7;
+        padding: 0 5px;
+        .f-book;
+        font-size: 12px;
+        color: #eff3f7;
+        text-transform: lowercase;
+        .border-radius(5px);
+        .opacity(0);
+    }
+
+    &:hover {
+        .portfolio__hover {
+            .opacity(.75);
+        }
+
+        p {
+            .opacity(1);
+        }
+    }
+}
+
+.portfolio__hover {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 181px;
+    height: 127px;
+    background-color: #016ca4;
+    .border-radius(3px);
+    .opacity(0);
+}
+
+.portfolio__url {
+    display: block;
+    text-align: center;
+    margin-bottom: 7px;
+    .f-li;
+    font-size: 13px;
+    color: #3ba8c0;
+    text-decoration: none;
+}
+
+.portfolio__item-description {
+    height: 45px;
+    p {
+        .f-light;
+        font-size: 15px;
+        color: #4a545d;
+        text-align: center;
+    }
+}
+
+.portfolio__add {
+    width: 181px;
+    height: 131px;
+    background: #edf8fc url('/img/add_ico.png') no-repeat center 35px ;
+    border: 1px dashed #3ba8c0;
+    .border-radius(5px);
+    cursor: pointer;
+
+    p {
+        margin-top: 80px;
+        .f-light;
+        font-size: 13px;
+        color: #3ba8c0;
+        text-align: center;
+    }
+}

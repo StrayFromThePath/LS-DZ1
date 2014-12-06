@@ -1,0 +1,221 @@
+/* --------- Fonts --------- */
+@font-face {
+  font-family: 'fira_sanslight';
+  src: url('/fonts/Fira/firasans-light.eot');
+  src: url('/fonts/Fira/firasans-light.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-light.woff') format('woff'), url('/fonts/Fira/firasans-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sanslight_italic';
+  src: url('/fonts/Fira/firasans-lightitalic.eot');
+  src: url('/fonts/Fira/firasans-lightitalic.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-lightitalic.woff') format('woff'), url('/fonts/Fira/firasans-lightitalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sansbook';
+  src: url('/fonts/Fira/firasans-book.eot');
+  src: url('/fonts/Fira/firasans-book.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-book.woff') format('woff'), url('/fonts/Fira/firasans-book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fira_sansmedium';
+  src: url('/fonts/Fira/firasans-medium.eot');
+  src: url('/fonts/Fira/firasans-medium.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-medium.woff') format('woff'), url('/fonts/Fira/firasans-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proximanovacond-semibold-webfont';
+  src: url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.eot');
+  src: url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.woff') format('woff'), url('/fonts/Proxima-Nova/proximanovacond-semibold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.f-book {
+  font-family: "fira_sansbook";
+}
+.f-medium {
+  font-family: "fira_sansmedium";
+}
+.f-light {
+  font-family: 'fira_sanslight';
+}
+.f-li {
+  font-family: 'fira_sanslight_italic';
+}
+.pnc-semib {
+  font-family: "proximanovacond-semibold-webfont";
+}
+/* --------- Mixins --------- */
+/* MIXINS */
+.inlineblock {
+  display: inline !ie;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+}
+.clearfix {
+  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
+  zoom: 1 !ie;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*------Menu---------*/
+.sidebar__left {
+  width: 250px;
+  float: left;
+  margin-right: 60px;
+}
+.nav {
+  width: 250px;
+  background-color: #eff3f7;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.nav__item {
+  width: 230px;
+  height: 75px;
+  margin: auto;
+  border-bottom: 2px solid #3ba8c0;
+}
+.nav__item:first-child .active {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.nav__item:last-child {
+  border-bottom: 0;
+}
+.nav__item:last-child .active {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.nav__link {
+  display: block;
+  width: 250px;
+  height: 75px;
+  margin-top: -2px;
+  padding-left: 17px;
+  font-family: "fira_sansbook";
+  font-size: 21px;
+  color: #959aa8;
+  line-height: 72px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.nav__link:hover {
+  font-size: 22px;
+  color: #3ba8c0;
+}
+.nav__link.active {
+  width: 250px;
+  margin-left: -10px;
+  padding-left: 27px;
+  background-color: #3ba8c0;
+  font-size: 21px;
+  color: #fff;
+}
+.nav__link.active:hover {
+  padding-left: 27px;
+}
+.contacts {
+  width: 250px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.contacts__title {
+  height: 40px;
+  padding-left: 20px;
+  background-color: #3ba8c0;
+  font-family: "fira_sansbook";
+  font-size: 21px;
+  line-height: 43px;
+  color: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.contacts__item:last-child .contacts__link {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.contacts__link {
+  position: relative;
+  padding-left: 80px;
+  display: block;
+  height: 40px;
+  width: 250px;
+  line-height: 40px;
+  font-family: "fira_sansbook";
+  font-size: 17px;
+  color: #fff;
+}
+.contacts__link:hover {
+  text-decoration: underline;
+}
+.contacts__link-mail {
+  background-color: #41b9d4;
+}
+.contacts__link-mail_ico {
+  position: absolute;
+  top: 13px;
+  left: 40px;
+  display: inline !ie;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  width: 21px;
+  height: 16px;
+  background: url('/img/sprites-contacts.png') no-repeat -40px 0;
+}
+.contacts__link-tel {
+  display: block;
+  height: 40px;
+  background-color: #48cbe8;
+}
+.contacts__link-tel_ico {
+  position: absolute;
+  top: 8px;
+  left: 40px;
+  display: inline !ie;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  width: 19px;
+  height: 21px;
+  background: url('/img/sprites-contacts.png') no-repeat -20px 0;
+}
+.contacts__link-skype {
+  display: block;
+  height: 40px;
+  background-color: #51daf8;
+}
+.contacts__link-skype_ico {
+  position: absolute;
+  top: 9px;
+  left: 40px;
+  display: inline !ie;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  width: 20px;
+  height: 20px;
+  background: url('/img/sprites-contacts.png') no-repeat 0 0;
+}
