@@ -1,5 +1,12 @@
 /* --------- Fonts --------- */
 @font-face {
+  font-family: 'fira_sansregular';
+  src: url('/fonts/Fira/firasans-regular.eot');
+  src: url('/fonts/Fira/firasans-regular.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-regular.woff') format('woff'), url('/fonts/Fira/firasans-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'fira_sanslight';
   src: url('/fonts/Fira/firasans-light.eot');
   src: url('/fonts/Fira/firasans-light.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-light.woff') format('woff'), url('/fonts/Fira/firasans-light.ttf') format('truetype');
@@ -36,6 +43,9 @@
 }
 .f-book {
   font-family: "fira_sansbook";
+}
+.f-regular {
+  font-family: 'fira_sansregular';
 }
 .f-medium {
   font-family: "fira_sansmedium";
@@ -78,7 +88,7 @@
 .nav {
   width: 250px;
   background-color: #eff3f7;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   margin-top: 2px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -89,16 +99,16 @@
 }
 .nav__item {
   width: 230px;
-  height: 75px;
+  height: 73px;
   margin: auto;
-  border-bottom: 2px solid #3ba8c0;
+  border-top: 2px solid #3ba8c0;
+}
+.nav__item:first-child {
+  border-top: 0;
 }
 .nav__item:first-child .active {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-}
-.nav__item:last-child {
-  border-bottom: 0;
 }
 .nav__item:last-child .active {
   border-bottom-left-radius: 3px;
@@ -106,7 +116,7 @@
 }
 .nav__link {
   display: block;
-  width: 250px;
+  width: 240px;
   height: 75px;
   margin-top: -2px;
   padding-left: 17px;
@@ -115,7 +125,11 @@
   color: #959aa8;
   line-height: 72px;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 .nav__link:hover {
   font-size: 22px;
@@ -128,6 +142,7 @@
   background-color: #3ba8c0;
   font-size: 21px;
   color: #fff;
+  pointer-events: none;
 }
 .nav__link.active:hover {
   padding-left: 27px;
@@ -142,7 +157,7 @@
   background-clip: padding-box;
 }
 .contacts__title {
-  height: 40px;
+  height: 39px;
   padding-left: 20px;
   background-color: #3ba8c0;
   font-family: "fira_sansbook";
@@ -159,6 +174,7 @@
 .contacts__link {
   position: relative;
   padding-left: 80px;
+  padding-right: 5px;
   display: block;
   height: 40px;
   width: 250px;
@@ -166,6 +182,8 @@
   font-family: "fira_sansbook";
   font-size: 17px;
   color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .contacts__link:hover {
   text-decoration: underline;
@@ -175,8 +193,8 @@
 }
 .contacts__link-mail_ico {
   position: absolute;
-  top: 13px;
-  left: 40px;
+  top: 12px;
+  left: 42px;
   display: inline !ie;
   display: inline-block;
   vertical-align: top;
@@ -187,13 +205,13 @@
 }
 .contacts__link-tel {
   display: block;
-  height: 40px;
+  height: 38px;
   background-color: #48cbe8;
 }
 .contacts__link-tel_ico {
   position: absolute;
-  top: 8px;
-  left: 40px;
+  top: 7px;
+  left: 43px;
   display: inline !ie;
   display: inline-block;
   vertical-align: top;
@@ -204,13 +222,13 @@
 }
 .contacts__link-skype {
   display: block;
-  height: 40px;
+  height: 38px;
   background-color: #51daf8;
 }
 .contacts__link-skype_ico {
   position: absolute;
-  top: 9px;
-  left: 40px;
+  top: 8px;
+  left: 43px;
   display: inline !ie;
   display: inline-block;
   vertical-align: top;

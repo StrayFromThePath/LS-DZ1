@@ -13,6 +13,9 @@
 
                 <link rel="stylesheet" href="dest/css/main.min.css">
 
+                <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+                <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
                     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
                 </head>
                 <body>
@@ -21,21 +24,19 @@
                         <div class = "maincontent">
 
                             <!-------Header------->
-                            <header class="header">
                                 <?php
-                                    include("/temlate/header.php");
+                                    include("tmpl/header.php");
                                 ?>
-                            </header>
+                            <!---------------->
+
                                 <div class="main">
                                     <div class="container">
 
                                         <!-------Menu------->
 
-                                            <div class="sidebar__left">
                                             <?php
-                                                include("/temlate/menu.php");
+                                                include("tmpl/menu.php");
                                             ?>
-                                            </div>
 
                                             <!-------Основная информация------->
 
@@ -114,14 +115,17 @@
                                     </div>
                                 </div>
 
-                                <footer class="footer">
+                                <!----Footer----->
+
                                 <?php
-                                    include("/temlate/footer.php");
+                                    include("tmpl/footer.php");
                                 ?>
-                                </footer>
+
+                                <!---------------->
 
                                 <script src="js/vendor/jquery-1.11.0.min.js"></script>
                                 <script src="js/jquery.dotdotdot.min.js"></script>
+                                <script src="js/placeholders.min.js"></script>
                                 <script src="js/main.js"></script>
 
                             </body>

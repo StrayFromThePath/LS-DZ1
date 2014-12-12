@@ -17,18 +17,19 @@
 .nav {
     width: 250px;
     background-color: #eff3f7;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     margin-top: 2px;
     .border-radius(3px);
 }
 
 .nav__item {
     width: 230px;
-    height: 75px;
+    height: 73px;
     margin: auto;
-    border-bottom: 2px solid #3ba8c0;
+    border-top: 2px solid #3ba8c0;
 
     &:first-child {
+        border-top: 0;
         .active {
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
@@ -36,7 +37,7 @@
     }
 
     &:last-child {
-        border-bottom: 0;
+
         .active {
             border-bottom-left-radius: 3px;
             border-bottom-right-radius: 3px;
@@ -46,7 +47,7 @@
 
 .nav__link {
     display: block;
-    width: 250px;
+    width: 240px;
     height: 75px;
     margin-top: -2px;
     padding-left: 17px;
@@ -55,7 +56,8 @@
     color: #959aa8;
     line-height: 72px;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
+    .transition(.2s);
+
 
     &:hover {
         font-size: 22px;
@@ -69,6 +71,7 @@
         background-color: #3ba8c0;
         font-size: 21px;
         color: #fff;
+        pointer-events: none;
 
         &:hover {
             padding-left: 27px;
@@ -82,7 +85,7 @@
 }
 
 .contacts__title {
-    height: 40px;
+    height: 39px;
     padding-left: 20px;
     background-color: #3ba8c0;
     .f-book;
@@ -105,6 +108,7 @@
 .contacts__link {
     position: relative;
     padding-left: 80px;
+    padding-right: 5px;
     display: block;
     height: 40px;
     width: 250px;
@@ -112,6 +116,9 @@
     .f-book;
     font-size: 17px;
     color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 
     &:hover {
         text-decoration: underline;
@@ -124,8 +131,8 @@
 
 .contacts__link-mail_ico {
     position: absolute;
-    top: 13px;
-    left: 40px;
+    top: 12px;
+    left: 42px;
     .inlineblock;
     width: 21px;
     height: 16px;
@@ -134,14 +141,14 @@
 
 .contacts__link-tel {
     display: block;
-    height: 40px;
+    height: 38px;
     background-color: #48cbe8;
 }
 
 .contacts__link-tel_ico {
     position: absolute;
-    top: 8px;
-    left: 40px;
+    top: 7px;
+    left: 43px;
     .inlineblock;
     width: 19px;
     height: 21px;
@@ -150,14 +157,14 @@
 
 .contacts__link-skype {
     display: block;
-    height: 40px;
+    height: 38px;
     background-color: #51daf8;
 }
 
 .contacts__link-skype_ico {
     position: absolute;
-    top: 9px;
-    left: 40px;
+    top: 8px;
+    left: 43px;
     .inlineblock;
     width: 20px;
     height: 20px;

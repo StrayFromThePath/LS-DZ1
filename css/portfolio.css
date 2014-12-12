@@ -1,5 +1,12 @@
 /* --------- Fonts --------- */
 @font-face {
+  font-family: 'fira_sansregular';
+  src: url('/fonts/Fira/firasans-regular.eot');
+  src: url('/fonts/Fira/firasans-regular.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-regular.woff') format('woff'), url('/fonts/Fira/firasans-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'fira_sanslight';
   src: url('/fonts/Fira/firasans-light.eot');
   src: url('/fonts/Fira/firasans-light.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-light.woff') format('woff'), url('/fonts/Fira/firasans-light.ttf') format('truetype');
@@ -36,6 +43,9 @@
 }
 .f-book {
   font-family: "fira_sansbook";
+}
+.f-regular {
+  font-family: 'fira_sansregular';
 }
 .f-medium {
   font-family: "fira_sansmedium";
@@ -95,7 +105,6 @@
 .portfolio__list {
   *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
   zoom: 1 !ie;
-  min-height: 737px;
   padding: 0 20px;
   margin-left: -29px;
 }
@@ -136,11 +145,34 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.portfolio__pic p {
+.portfolio__pic:hover .portfolio__hover {
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+  filter: alpha(opacity=75);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+}
+.portfolio__pic:hover p {
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+  filter: alpha(opacity=100);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.portfolio__pic-title {
   display: block;
   position: absolute;
   top: 55px;
   left: 55px;
+  width: 68px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   border: 2px solid #eff3f7;
   padding: 0 5px;
   font-family: "fira_sansbook";
@@ -157,21 +189,11 @@
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-.portfolio__pic:hover .portfolio__hover {
-  filter: alpha(opacity=75);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
-}
-.portfolio__pic:hover p {
-  filter: alpha(opacity=100);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
 .portfolio__hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 181px;
+  width: 182px;
   height: 127px;
   background-color: #016ca4;
   -webkit-border-radius: 3px;
@@ -195,8 +217,6 @@
 }
 .portfolio__item-description {
   height: 45px;
-}
-.portfolio__item-description p {
   font-family: 'fira_sanslight';
   font-size: 15px;
   color: #4a545d;

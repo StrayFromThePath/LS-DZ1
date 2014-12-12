@@ -1,5 +1,12 @@
 /* --------- Fonts --------- */
 @font-face {
+  font-family: 'fira_sansregular';
+  src: url('/fonts/Fira/firasans-regular.eot');
+  src: url('/fonts/Fira/firasans-regular.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-regular.woff') format('woff'), url('/fonts/Fira/firasans-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'fira_sanslight';
   src: url('/fonts/Fira/firasans-light.eot');
   src: url('/fonts/Fira/firasans-light.eot?#iefix') format('embedded-opentype'), url('/fonts/Fira/firasans-light.woff') format('woff'), url('/fonts/Fira/firasans-light.ttf') format('truetype');
@@ -36,6 +43,9 @@
 }
 .f-book {
   font-family: "fira_sansbook";
+}
+.f-regular {
+  font-family: 'fira_sansregular';
 }
 .f-medium {
   font-family: "fira_sansmedium";
@@ -172,11 +182,12 @@
   padding: 0 14px;
   margin-bottom: 8px;
   margin-right: 5px;
-  background: -moz-linear-gradient(top, #3ba7c0 50%, #2e8ca2 50%);
-  background: -webkit-linear-gradient(top, #3ba7c0 50%, #2e8ca2 50%);
-  background: -o-linear-gradient(top, #3ba7c0 50%, #2e8ca2 50%);
-  background: -ms-linear-gradient(top, #3ba7c0 50%, #2e8ca2 50%);
-  background: linear-gradient(to bottom, #3ba7c0 50%, #2e8ca2 50%);
+  background-image: -moz-linear-gradient(top, #3ba7c0 50%, #2e8ca2 50%);
+  background-image: -webkit-linear-gradient(top, #3ba7c0 50%, #2e8ca2 50%);
+  background-image: -o-linear-gradient(top, #3ba7c0 50%, #2e8ca2 50%);
+  background-image: -ms-linear-gradient(top, #3ba7c0 50%, #2e8ca2 50%);
+  background-image: linear-gradient(to bottom, #3ba7c0 50%, #2e8ca2 50%);
+  background-color: #3ba7c0;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;

@@ -11,6 +11,9 @@
 
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+            <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
                 <link rel="stylesheet" href="dest/css/main.min.css">
 
                     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -20,22 +23,56 @@
                     <div class = "wrapper">
                         <div class = "maincontent">
 
+                            <!-------Popup добавления проекта------->
+
+                                <div class="popup" id="add__project">
+                                    <div class="popup__inner">
+                                        <div class="popup__title">
+                                        Добавление проекта
+                                            <span class="popup__close"></span>
+                                        </div>
+                                        <form action="">
+                                            <div class="popup__row">
+                                                <label for="name-project">Название проекта</label><br/>
+                                                <input id="name-project" class="popup__input" name="name-project" type="text" placeholder="Введите название" autofocus="" required/>
+                                            </div>
+                                            <div class="popup__row">
+                                                <label for="pic-project">Картинка проекта</label><br/>
+                                                <div class="file">
+                                                    <input id="pic-project" name="pic-project" type="file" placeholder="Загрузите изображение" required/>
+                                                    <div class="inputbox"><span></span></div>
+                                                    <div class="btn"></div>
+                                                </div>
+                                            </div>
+                                            <div class="popup__row">
+                                                <label for="url-project">URL проекта</label><br/>
+                                                <input id="url-project" class="popup__input" name="url-project" type="url" placeholder="Добавьте ссылку" required/>
+                                            </div>
+                                            <div class="popup__row">
+                                                <label for="desc-project">Описание</label><br/>
+                                                <textarea name="desc-project" id="desc-project" class="popup__textarea" cols="30" rows="10" placeholder="Пару слов о Вашем проекте" required></textarea>
+                                            </div>
+                                            <div class="popup__row-button">
+                                                <input class="popup__submit" type="submit" value="Добавить"/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
                             <!-------Header------->
-                                <header class="header">
+
                                 <?php
-                                    include("/temlate/header.php");
+                                    include("tmpl/header.php");
                                 ?>
-                                </header>
+                                <!------------------>
                                 <div class="main">
                                     <div class="container">
 
                                         <!-------Menu------->
 
-                                            <div class="sidebar__left">
                                             <?php
-                                                include("/temlate/menu.php");
+                                                include("tmpl/menu.php");
                                             ?>
-                                            </div>
 
                                             <!-------Портфолио------->
 
@@ -46,67 +83,70 @@
                                                             <a class="portfolio__pic" href="#">
                                                                 <img src="/img/item.jpg" alt="portfolio-item"/>
                                                                 <div class="portfolio__hover"></div>
-                                                                <p>Название</p>
+                                                                <p class="portfolio__pic-title">Название</p>
                                                             </a>
                                                             <a class="portfolio__url" href="#">www.site.com</a>
-                                                            <div class="portfolio__item-description">
-                                                                <p>Информация о проекте <br/> 1 превью 2 строки....</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="portfolio__item">
-                                                            <a class="portfolio__pic" href="#">
-                                                                <img src="/img/item.jpg" alt="portfolio-item"/>
-                                                                <div class="portfolio__hover"></div>
-                                                                <p>Название</p>
-                                                            </a>
-                                                            <a class="portfolio__url" href="#">www.site.com</a>
-                                                            <div class="portfolio__item-description">
-                                                                <p>Информация о проекте <br/> 1 превью 2 строки....</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="portfolio__item">
-                                                            <a class="portfolio__pic" href="#">
-                                                                <img src="/img/item.jpg" alt="portfolio-item"/>
-                                                                <div class="portfolio__hover"></div>
-                                                                <p>Название</p>
-                                                            </a>
-                                                            <a class="portfolio__url" href="#">www.site.com</a>
-                                                            <div class="portfolio__item-description">
-                                                                <p>Информация о проекте <br/> 1 превью 2 строки....</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="portfolio__item">
-                                                            <a class="portfolio__pic" href="#">
-                                                                <img src="/img/item.jpg" alt="portfolio-item"/>
-                                                                <div class="portfolio__hover"></div>
-                                                                <p>Название</p>
-                                                            </a>
-                                                            <a class="portfolio__url" href="#">www.site.com</a>
-                                                            <div class="portfolio__item-description">
-                                                                <p>Информация о проекте <br/> 1 превью 2 строки....</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="portfolio__item portfolio__add">
-                                                            <p>Добавить проект</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-
+                                                            <!-----Скрипт ограничения контента не сработает через проверку в инспекторе----->
+                                                                <p class="portfolio__item-description">
+                                                                Информация о проекте 1 превью 2 строки 2 строки 2 строки 2 строки
+                                                                </p>
+                                                            </li>
+                                                            <li class="portfolio__item">
+                                                                <a class="portfolio__pic" href="#">
+                                                                    <img src="/img/item.jpg" alt="portfolio-item"/>
+                                                                    <div class="portfolio__hover"></div>
+                                                                    <p class="portfolio__pic-title">Название</p>
+                                                                </a>
+                                                                <a class="portfolio__url" href="#">www.site.com</a>
+                                                                <!-----Скрипт ограничения контента не сработает через проверку в инспекторе----->
+                                                                    <p class="portfolio__item-description">
+                                                                    Информация о проекте 1 превью 2 строки 2 строки 2 строки 2 строки
+                                                                    </p>
+                                                                </li>
+                                                                <li class="portfolio__item">
+                                                                    <a class="portfolio__pic" href="#">
+                                                                        <img src="/img/item.jpg" alt="portfolio-item"/>
+                                                                        <div class="portfolio__hover"></div>
+                                                                        <p class="portfolio__pic-title">Название</p>
+                                                                    </a>
+                                                                    <a class="portfolio__url" href="#">www.site.com</a>
+                                                                    <!-----Скрипт ограничения контента не сработает через проверку в инспекторе----->
+                                                                        <p class="portfolio__item-description">
+                                                                        Информация о проекте 1 превью 2 строки 2 строки 2 строки 2 строки
+                                                                        </p>
+                                                                    </li>
+                                                                    <li class="portfolio__item">
+                                                                        <a class="portfolio__pic" href="#">
+                                                                            <img src="/img/item.jpg" alt="portfolio-item"/>
+                                                                            <div class="portfolio__hover"></div>
+                                                                            <p class="portfolio__pic-title">Название</p>
+                                                                        </a>
+                                                                        <a class="portfolio__url" href="#">www.site.com</a>
+                                                                        <!-----Скрипт ограничения контента не сработает через проверку в инспекторе----->
+                                                                            <p class="portfolio__item-description">
+                                                                            Информация о проекте 1 превью 2 строки 2 строки 2 строки 2 строки
+                                                                            </p>
+                                                                        </li>
+                                                                        <li id="myModal" class="portfolio__item portfolio__add">
+                                                                            <p>Добавить проект</p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
                                             </div>
                                         </div>
                                         <div class="empty"></div>
                                     </div>
                                 </div>
 
-                                <footer class="footer">
+                                <!-----Footer--->
                                 <?php
-                                    include("/temlate/footer.php");
+                                    include("tmpl/footer.php");
                                 ?>
-                                </footer>
+                                <!--------------->
 
                                 <script src="js/vendor/jquery-1.11.0.min.js"></script>
                                 <script src="js/jquery.dotdotdot.min.js"></script>
+                                <script src="js/placeholders.min.js"></script>
                                 <script src="js/main.js"></script>
 
                             </body>

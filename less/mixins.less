@@ -39,6 +39,14 @@
 	box-shadow:         @string;
 }
 
+.box-shadowIE (@x: 5px,@y: 5px,@color: #000000) {
+    filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=@x, OffY=@y, Color=@color);
+}
+
+.gradientie8(@startColor, @endColor) {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@startColor, endColorstr=@endColor, GradientType=1);
+}
+
 .transition (@transition) {
 	-webkit-transition: @transition;
 	-moz-transition:    @transition;

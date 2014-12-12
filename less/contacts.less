@@ -23,6 +23,7 @@
     text-align: center;
     line-height: 125px;
     .box-shadow(0 15px 0 0 #67dffa);
+    .box-shadowIE(0,15,#67dffa);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -89,7 +90,7 @@ textarea {
     height: 77px;
     border: 1px solid rgb(72, 203, 232);
     .border-radius(4px);
-    background-color: rgb(251, 252, 253);
+    background: #fff;
 }
 
 .form__captcha-row {
@@ -101,6 +102,7 @@ textarea {
     height: 30px;
     margin-top: 20px;
     margin-left: 18px;
+    padding: 5px;
     border: 1px solid rgb(72, 203, 232);
     .border-radius(3px);
     background-color: rgb(251, 252, 253);
@@ -108,6 +110,7 @@ textarea {
 
 
 .form__input-submit {
+    display: block;
     float: left;
     width: 139px;
     height: 31px;
@@ -116,39 +119,46 @@ textarea {
     background-color: rgb(72, 203, 232);
     outline: none;
     .box-shadow(0 3px 0 0 #3ba8c0);
+    .box-shadowIE(0,3,#3ba8c0);
     .f-book;
     font-size: 19px;
     color: #fff;
 
     &:hover {
         box-shadow: none;
+        .box-shadowIE(0,0,#3ba8c0);
         height: 34px;
     }
 
     &:active {
         .box-shadow(0 -3px 0 0 #3ba8c0);
+        .box-shadowIE(0,-3,#3ba8c0);
     }
 }
 
 .form__input-reset {
+    display: block;
     float: right;
-    width: 139px;
+    width: 142px;
     height: 31px;
     .border-radius(5px);
     border: none;
     background-color: rgb(132, 157, 181);
     outline: none;
     .box-shadow(0 3px 0 0 #687b8f);
+    .box-shadowIE(0,3,#687b8f);
     .f-book;
     font-size: 19px;
     color: #fff;
 
     &:hover {
         box-shadow: none;
+        .box-shadowIE(0,0,#687b8f);
         height: 34px;
     }
 
     &:active {
         .box-shadow(0 -3px 0 0 #687b8f);
+        .box-shadowIE(0,-3,#687b8f);
     }
 }

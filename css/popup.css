@@ -79,69 +79,66 @@
 .clearfix:after {
   clear: both;
 }
-.contact {
-  width: 650px;
-  float: right;
-  margin-bottom: 26px;
+/*------PopUp-------*/
+.popup {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  z-index: 1000;
+}
+.popup label {
+  font-family: 'fira_sanslight';
+  font-size: 17px;
+  color: #959aa8;
+}
+.popup__row {
+  padding-left: 22px;
+  margin-bottom: 10px;
+}
+#add__project {
+  width: 362px;
+  min-height: 490px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-}
-.contact__title {
-  height: 121px;
-  margin-bottom: 15px;
-  background-color: #48cbe8;
-  font-family: "fira_sansbook";
-  font-size: 27px;
-  color: #fff;
-  text-align: center;
-  line-height: 125px;
-  -webkit-box-shadow: 0 15px 0 0 #67dffa;
-  -moz-box-shadow: 0 15px 0 0 #67dffa;
-  box-shadow: 0 15px 0 0 #67dffa;
-  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=15, Color=#67dffa);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-.contact__wrap {
-  min-height: 700px;
   background-color: #eff3f7;
 }
-.form__wrap {
-  width: 402px;
-  margin: auto;
-  padding-top: 47px;
+.popup__title {
+  position: relative;
+  height: 45px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  background: #48cbe8;
+  -webkit-box-shadow: 0 10px 0 0 #67dffa;
+  -moz-box-shadow: 0 10px 0 0 #67dffa;
+  box-shadow: 0 10px 0 0 #67dffa;
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=10, Color=#67dffa);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-family: 'fira_sansregular';
+  font-size: 25px;
+  color: #fff;
+  line-height: 45px;
 }
-.form__wrap label {
-  font-family: 'fira_sanslight';
-  font-size: 19px;
-  color: #959aa8;
+.popup__close {
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #48cbe8 url("/img/close.png") no-repeat 0 0;
+  cursor: pointer;
 }
-.form__inputs-row {
-  *zoom: expression(this.runtimeStyle.zoom='1', this.appendChild(document.createElement('br')).style.cssText='clear:both;font:0/0 serif');
-  zoom: 1 !ie;
-  margin-bottom: 15px;
-}
-.form__inputs-row:before,
-.form__inputs-row:after {
-  content: "";
-  display: table;
-}
-.form__inputs-row:after {
-  clear: both;
-}
-.form__input-row {
-  display: inline !ie;
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1 !ie;
-}
-.form__input {
-  width: 190px;
-  height: 39px;
+.popup__input {
+  width: 318px;
+  height: 40px;
   padding: 10px;
   border: 1px solid #48cbe8;
   border-radius: 3px;
@@ -149,26 +146,75 @@
   font-family: 'fira_sanslight';
   font-size: 13px;
 }
-.form__input::-webkit-input-placeholder {
+.popup__input::-webkit-input-placeholder {
   color: #48cbe8;
 }
-.form__input:-moz-placeholder {
+.popup__input:-moz-placeholder {
   color: #48cbe8;
 }
-.form__input::-moz-placeholder {
+.popup__input::-moz-placeholder {
   color: #48cbe8;
 }
-.form__input:-ms-input-placeholder {
+.popup__input:-ms-input-placeholder {
   color: #48cbe8;
 }
-.form__input-name {
-  margin-right: 18px;
+.error {
+  border: 1px solid #f97e76!important;
+  background-color: rgba(249, 126, 118, 0.3) !important;
 }
-textarea {
-  width: 402px;
-  height: 181px;
+.file {
+  overflow: hidden;
+  position: relative;
+  width: 320px;
+}
+.inputbox {
+  width: 265px;
+  float: left;
+  margin: 0;
   padding: 10px;
-  margin-bottom: 13px;
+  height: 40px;
+  border: 1px solid #48cbe8;
+  background-color: #fbfcfd;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+.inputbox span {
+  width: 500px;
+  display: block;
+}
+.btn {
+  float: left;
+  -webkit-border-radius: 0px 3px 3px 0px;
+  -moz-border-radius: 0px 3px 3px 0px;
+  border-radius: 0px 3px 3px 0px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: inline-block;
+  height: 40px;
+  width: 52px;
+  background: #48cbe8 url('/img/add_file_ico.png') no-repeat center center;
+}
+.file input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.popup__textarea {
+  width: 318px;
+  height: 109px;
+  margin-bottom: 10px;
   border: 1px solid #48cbe8;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -178,58 +224,10 @@ textarea {
   background-clip: padding-box;
   background-color: #fbfcfd;
   resize: none;
-  font-family: 'fira_sanslight';
-  font-size: 13px;
 }
-textarea::-webkit-input-placeholder {
-  color: #48cbe8;
-}
-textarea:-moz-placeholder {
-  color: #48cbe8;
-}
-textarea::-moz-placeholder {
-  color: #48cbe8;
-}
-textarea:-ms-input-placeholder {
-  color: #48cbe8;
-}
-.form__captcha-pic {
-  display: inline !ie;
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1 !ie;
-  width: 189px;
-  height: 77px;
-  border: 1px solid #48cbe8;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background: #fff;
-}
-.form__captcha-row {
-  margin-bottom: 34px;
-}
-.form__input-captcha {
-  width: 190px;
-  height: 30px;
-  margin-top: 20px;
-  margin-left: 18px;
-  padding: 5px;
-  border: 1px solid #48cbe8;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background-color: #fbfcfd;
-}
-.form__input-submit {
+.popup__submit {
   display: block;
-  float: left;
+  margin: 0 auto 15px auto;
   width: 139px;
   height: 31px;
   -webkit-border-radius: 5px;
@@ -249,47 +247,63 @@ textarea:-ms-input-placeholder {
   font-size: 19px;
   color: #fff;
 }
-.form__input-submit:hover {
+.popup__submit:hover {
   box-shadow: none;
   filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=0, Color=#3ba8c0);
   height: 34px;
 }
-.form__input-submit:active {
+.popup__submit:active {
   -webkit-box-shadow: 0 -3px 0 0 #3ba8c0;
   -moz-box-shadow: 0 -3px 0 0 #3ba8c0;
   box-shadow: 0 -3px 0 0 #3ba8c0;
-  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-3, Color=#3ba8c0);
 }
-.form__input-reset {
-  display: block;
-  float: right;
-  width: 142px;
-  height: 31px;
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  filter: alpha(opacity=80);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
+#popup__message {
+  width: 350px;
+  min-height: 90px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #eff3f7;
+}
+.popup__message {
+  position: relative;
+  margin: 15px;
+  padding-left: 5px;
+  border: 1px solid #49bb7b;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border: none;
-  background-color: #849db5;
-  outline: none;
-  -webkit-box-shadow: 0 3px 0 0 #687b8f;
-  -moz-box-shadow: 0 3px 0 0 #687b8f;
-  box-shadow: 0 3px 0 0 #687b8f;
-  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=3, Color=#687b8f);
+  background-color: #b8e1ce;
   font-family: "fira_sansbook";
-  font-size: 19px;
-  color: #fff;
+  font-size: 15px;
+  color: #49bb7b;
 }
-.form__input-reset:hover {
-  box-shadow: none;
-  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=0, Color=#687b8f);
-  height: 34px;
+.popup__message span {
+  font-size: 25px;
 }
-.form__input-reset:active {
-  -webkit-box-shadow: 0 -3px 0 0 #687b8f;
-  -moz-box-shadow: 0 -3px 0 0 #687b8f;
-  box-shadow: 0 -3px 0 0 #687b8f;
-  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-3, Color=#687b8f);
+#popup__close-msg {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 11px;
+  height: 11px;
+  background: url("/img/close_msg_ico.png") no-repeat 0 0;
 }
