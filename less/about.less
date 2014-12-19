@@ -17,21 +17,23 @@
     float: right;
 }
 
-.info__primary {
+.info__about {
     margin-bottom: 25px;
     background-color: #eff3f7;
     .border-radius(5px);
 }
 
-.info__primary-title {
-    width: 340px;
-    height: 67px;
-    padding-left: 20px;
-    border-bottom: 2px solid #3ba8c0;
-    .f-book;
-    font-size: 27px;
-    color: #3ba8c0;
-    line-height: 67px;
+.info__about-title {
+    h3 {
+        .inlineblock;
+        padding: 14px 21px 14px;
+        margin: 0;
+        border-bottom: 2px solid #3ba8c0;
+        .f-book;
+        font-size: 27px;
+        font-weight: normal;
+        color: #3ba8c0;
+    }
 }
 
 .info__primary-avatar {
@@ -104,28 +106,14 @@
     text-decoration: none;
 }
 
-.info__job {
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    background-color: #eff3f7;
-    .border-radius(5px);
+.about__list {
+    padding-top: 32px;
+    padding-bottom: 1px;
 }
 
-.info__job-title {
-    width: 209px;
-    height: 67px;
-    padding-left: 20px;
-    margin-bottom: 35px;
-    border-bottom: 2px solid #3ba8c0;
-    .f-book;
-    font-size: 27px;
-    color: #3ba8c0;
-    line-height: 67px;
-}
-
-.job__item {
+.about__item {
     position: relative;
-    margin-top: 25px;
+    margin-bottom: 25px;
     margin-left: 65px;
 
     &:before{
@@ -148,37 +136,14 @@
     }
 }
 
-.job__item-period {
+.about__item-period {
     padding-left: 66px;
     .f-light;
     font-size: 15px;
     color: #4a545d;
 }
 
-.info__edu {
-    padding-bottom: 25px;
-    margin-bottom: 30px;
-    background-color: #eff3f7;
-    .border-radius(5px);
-}
-
-.info__edu-title {
-    width: 214px;
-    height: 61px;
-    padding-left: 20px;
-    margin-bottom: 35px;
-    border-bottom: 2px solid #3ba8c0;
-    .f-book;
-    font-size: 27px;
-    color: #3ba8c0;
-    line-height: 55px;
-}
-
-.edu__item {
-    position: relative;
-    margin-top: 25px;
-    margin-left: 65px;
-
+.about__item-vyz {
     &:before{
         content: "";
         position: absolute;
@@ -190,16 +155,9 @@
         background: url("/img/edu_ico.png") no-repeat 0 0;
         overflow: hidden;
     }
-
-    p {
-        padding-left: 66px;
-        .f-book;
-        font-size: 17px;
-        color: #4a545d;
-    }
 }
 
-.edu__item-kurs {
+.about__item-kurs {
     &:before{
         content: "";
         position: absolute;
@@ -211,11 +169,4 @@
         background: url("/img/kurs_ico.png") no-repeat 0 0;
         overflow: hidden;
     }
-}
-
-.edu__item-period {
-    padding-left: 67px;
-    .f-light;
-    font-size: 15px;
-    color: #4a545d;
 }

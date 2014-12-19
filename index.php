@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-            <title>LoftSchool DZ1</title>
+            <title>Обо мне</title>
 
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,11 +41,13 @@
                                             <!-------Основная информация------->
 
                                                 <div class="info">
-                                                    <div class="info__primary">
-                                                        <div class="info__primary-title">Основная информация</div>
-                                                        <a class="info__primary-avatar" href="#">
+                                                    <div class="info__about">
+                                                        <div class="info__about-title">
+                                                            <h3>Основная информация</h3>
+                                                        </div>
+                                                        <div class="info__primary-avatar" href="#">
                                                             <img src="/img/arch.jpg" alt="user"/>
-                                                        </a>
+                                                        </div>
                                                         <ul class="info__primary-about">
                                                             <li class="info__primary-row info__primary-name">
                                                                 <span>Меня зовут:</span> Толкунов Александр Сергеевич
@@ -63,47 +65,51 @@
                                                                 <span>Ключевые навыки:</span>
                                                                 <ul class="tag__list">
                                                                     <li class="tag__item">
-                                                                        <a class="tag__link" href="#">html</a>
+                                                                        <div class="tag__link">html</div>
                                                                     </li>
                                                                     <li class="tag__item">
-                                                                        <a class="tag__link" href="#">css</a>
+                                                                        <div class="tag__link">css</div>
                                                                     </li>
                                                                     <li class="tag__item">
-                                                                        <a class="tag__link" href="#">javascript</a>
+                                                                        <div class="tag__link">javascript</div>
                                                                     </li>
                                                                     <li class="tag__item">
-                                                                        <a class="tag__link" href="#">gulp</a>
+                                                                        <div class="tag__link">gulp</div>
                                                                     </li>
                                                                     <li class="tag__item">
-                                                                        <a class="tag__link" href="#">git</a>
+                                                                        <div class="tag__link">git</div>
                                                                     </li>
                                                                 </ul>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="info__job">
-                                                        <div class="info__job-title">Опыт работы</div>
-                                                        <ul class="job__list">
-                                                            <li class="job__item">
+                                                    <div class="info__about">
+                                                        <div class="info__about-title">
+                                                            <h3>Опыт работы</h3>
+                                                        </div>
+                                                        <ul class="about__list">
+                                                            <li class="about__item">
                                                                 <p>"ИП Боровицкий" - Продавец дисков</p>
-                                                                <span class="job__item-period">Сентябрь 2005 - Август 2008</span>
+                                                                <span class="about__item-period">Сентябрь 2005 - Август 2008</span>
                                                             </li>
-                                                            <li class="job__item">
+                                                            <li class="about__item">
                                                                 <p>"ООО Системы безопастности" - Системный администратор</p>
-                                                                <span class="job__item-period">Июнь 2008 - Июль 2010</span>
+                                                                <span class="about__item-period">Июнь 2008 - Июль 2010</span>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="info__edu">
-                                                        <div class="info__edu-title">Образование</div>
-                                                        <ul class="edu__list">
-                                                            <li class="edu__item">
+                                                    <div class="info__about">
+                                                        <div class="info__about-title">
+                                                            <h3>Образование</h3>
+                                                        </div>
+                                                        <ul class="about__list">
+                                                            <li class="about__item  about__item-vyz">
                                                                 <p>Незаконченное высшее. ДГТУ</p>
-                                                                <span class="edu__item-period">Октябрь 2012 - по настоящее время</span>
+                                                                <span class="about__item-period">Октябрь 2012 - по настоящее время</span>
                                                             </li>
-                                                            <li class="edu__item edu__item-kurs">
+                                                            <li class="about__item about__item-kurs">
                                                                 <p>Курсы Loftschool.ru</p>
-                                                                <span class="edu__item-period">Август 2014 - по настоящее время</span>
+                                                                <span class="about__item-period">Август 2014 - по настоящее время</span>
                                                             </li>
                                                         </ul>
                                                     </div>

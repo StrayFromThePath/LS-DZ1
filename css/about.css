@@ -96,7 +96,7 @@
   width: 650px;
   float: right;
 }
-.info__primary {
+.info__about {
   margin-bottom: 25px;
   background-color: #eff3f7;
   -webkit-border-radius: 5px;
@@ -106,15 +106,18 @@
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.info__primary-title {
-  width: 340px;
-  height: 67px;
-  padding-left: 20px;
+.info__about-title h3 {
+  display: inline !ie;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1 !ie;
+  padding: 14px 21px 14px;
+  margin: 0;
   border-bottom: 2px solid #3ba8c0;
   font-family: "fira_sansbook";
   font-size: 27px;
+  font-weight: normal;
   color: #3ba8c0;
-  line-height: 67px;
 }
 .info__primary-avatar {
   display: block;
@@ -199,34 +202,16 @@
   color: #fff;
   text-decoration: none;
 }
-.info__job {
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  background-color: #eff3f7;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+.about__list {
+  padding-top: 32px;
+  padding-bottom: 1px;
 }
-.info__job-title {
-  width: 209px;
-  height: 67px;
-  padding-left: 20px;
-  margin-bottom: 35px;
-  border-bottom: 2px solid #3ba8c0;
-  font-family: "fira_sansbook";
-  font-size: 27px;
-  color: #3ba8c0;
-  line-height: 67px;
-}
-.job__item {
+.about__item {
   position: relative;
-  margin-top: 25px;
+  margin-bottom: 25px;
   margin-left: 65px;
 }
-.job__item:before {
+.about__item:before {
   content: "";
   position: absolute;
   top: 2px;
@@ -240,46 +225,19 @@
   background: url("/img/job_ico.png") no-repeat 0 0;
   overflow: hidden;
 }
-.job__item p {
+.about__item p {
   padding-left: 66px;
   font-family: "fira_sansbook";
   font-size: 17px;
   color: #4a545d;
 }
-.job__item-period {
+.about__item-period {
   padding-left: 66px;
   font-family: 'fira_sanslight';
   font-size: 15px;
   color: #4a545d;
 }
-.info__edu {
-  padding-bottom: 25px;
-  margin-bottom: 30px;
-  background-color: #eff3f7;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-.info__edu-title {
-  width: 214px;
-  height: 61px;
-  padding-left: 20px;
-  margin-bottom: 35px;
-  border-bottom: 2px solid #3ba8c0;
-  font-family: "fira_sansbook";
-  font-size: 27px;
-  color: #3ba8c0;
-  line-height: 55px;
-}
-.edu__item {
-  position: relative;
-  margin-top: 25px;
-  margin-left: 65px;
-}
-.edu__item:before {
+.about__item-vyz:before {
   content: "";
   position: absolute;
   top: 3px;
@@ -293,13 +251,7 @@
   background: url("/img/edu_ico.png") no-repeat 0 0;
   overflow: hidden;
 }
-.edu__item p {
-  padding-left: 66px;
-  font-family: "fira_sansbook";
-  font-size: 17px;
-  color: #4a545d;
-}
-.edu__item-kurs:before {
+.about__item-kurs:before {
   content: "";
   position: absolute;
   top: 1px;
@@ -312,10 +264,4 @@
   height: 32px;
   background: url("/img/kurs_ico.png") no-repeat 0 0;
   overflow: hidden;
-}
-.edu__item-period {
-  padding-left: 67px;
-  font-family: 'fira_sanslight';
-  font-size: 15px;
-  color: #4a545d;
 }

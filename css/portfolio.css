@@ -155,22 +155,12 @@
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
 }
-.portfolio__pic:hover p {
-  -webkit-transition: 1.5s;
-  -moz-transition: 1.5s;
-  -ms-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
-  filter: alpha(opacity=100);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
 .portfolio__pic-title {
   display: block;
-  position: absolute;
-  top: 55px;
-  left: 55px;
-  width: 68px;
+  margin: 55px auto;
+  max-width: 100px;
+  max-height: 20px;
+  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   border: 2px solid #eff3f7;
@@ -185,9 +175,6 @@
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  filter: alpha(opacity=0);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
 }
 .portfolio__hover {
   position: absolute;

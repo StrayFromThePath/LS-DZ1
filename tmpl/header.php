@@ -7,7 +7,7 @@
             <li class="social__item">
                 <a class="social__link social__link-vk" href="http://vk.com/alexdefay" target="_blank"></a>
             </li>
-            <li class="social__item social">
+            <li class="social__item">
                 <a class="social__link social__link-tw" href="#" target="_blank"></a>
             </li>
             <li class="social__item">

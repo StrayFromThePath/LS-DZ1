@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-            <title>LoftSchool DZ1</title>
+            <title>Мои работы</title>
 
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,7 +39,7 @@
                                             <div class="popup__row">
                                                 <label for="pic-project">Картинка проекта</label><br/>
                                                 <div class="file">
-                                                    <input id="pic-project" name="pic-project" type="file" placeholder="Загрузите изображение" required/>
+                                                    <input id="pic-project" name="pic-project" type="file" required/>
                                                     <div class="inputbox"><span></span></div>
                                                     <div class="btn"></div>
                                                 </div>
@@ -82,8 +82,9 @@
                                                         <li class="portfolio__item">
                                                             <a class="portfolio__pic" href="#">
                                                                 <img src="/img/item.jpg" alt="portfolio-item"/>
-                                                                <div class="portfolio__hover"></div>
-                                                                <p class="portfolio__pic-title">Название</p>
+                                                                <div class="portfolio__hover">
+                                                                    <span class="portfolio__pic-title">Название</span>
+                                                                </div>
                                                             </a>
                                                             <a class="portfolio__url" href="#">www.site.com</a>
                                                             <!-----Скрипт ограничения контента не сработает через проверку в инспекторе----->
@@ -94,8 +95,9 @@
                                                             <li class="portfolio__item">
                                                                 <a class="portfolio__pic" href="#">
                                                                     <img src="/img/item.jpg" alt="portfolio-item"/>
-                                                                    <div class="portfolio__hover"></div>
-                                                                    <p class="portfolio__pic-title">Название</p>
+                                                                    <div class="portfolio__hover">
+                                                                        <span class="portfolio__pic-title">Название</span>
+                                                                    </div>
                                                                 </a>
                                                                 <a class="portfolio__url" href="#">www.site.com</a>
                                                                 <!-----Скрипт ограничения контента не сработает через проверку в инспекторе----->
@@ -106,8 +108,9 @@
                                                                 <li class="portfolio__item">
                                                                     <a class="portfolio__pic" href="#">
                                                                         <img src="/img/item.jpg" alt="portfolio-item"/>
-                                                                        <div class="portfolio__hover"></div>
-                                                                        <p class="portfolio__pic-title">Название</p>
+                                                                        <div class="portfolio__hover">
+                                                                            <span class="portfolio__pic-title">Название</span>
+                                                                        </div>
                                                                     </a>
                                                                     <a class="portfolio__url" href="#">www.site.com</a>
                                                                     <!-----Скрипт ограничения контента не сработает через проверку в инспекторе----->
@@ -118,8 +121,9 @@
                                                                     <li class="portfolio__item">
                                                                         <a class="portfolio__pic" href="#">
                                                                             <img src="/img/item.jpg" alt="portfolio-item"/>
-                                                                            <div class="portfolio__hover"></div>
-                                                                            <p class="portfolio__pic-title">Название</p>
+                                                                            <div class="portfolio__hover">
+                                                                                <span class="portfolio__pic-title">Название</span>
+                                                                            </div>
                                                                         </a>
                                                                         <a class="portfolio__url" href="#">www.site.com</a>
                                                                         <!-----Скрипт ограничения контента не сработает через проверку в инспекторе----->

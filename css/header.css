@@ -107,9 +107,7 @@
   zoom: 1 !ie;
   position: absolute;
   top: 35px;
-  right: -141px;
-  width: 283px;
-  margin-bottom: 20px;
+  right: -120px;
 }
 .social__list:before,
 .social__list:after {

@@ -186,6 +186,9 @@
 .inputbox span {
   width: 500px;
   display: block;
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+  color: #48cbe8;
 }
 .btn {
   float: left;

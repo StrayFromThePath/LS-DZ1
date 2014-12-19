@@ -85,7 +85,7 @@ $(document).ready(function() {
         //Стилизация input[type='file']
         fileInputVal : function () {
             $('.file').each(function(){
-                $(this).find('.inputbox span').text($(this).find('input').val());
+                $(this).find('.inputbox span').text("Загрузите изображение");
             });
         },
 
